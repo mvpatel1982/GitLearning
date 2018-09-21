@@ -42,5 +42,7 @@ If you want to unstage your file from stage, that time you have to use below com
  git reset HEAD <file name>
  e.g. git reset HEAD env.test
 
+Added by Mahesh PAtel
+
 Note: This command will help after git add command. (File content will remain as it is)
 
