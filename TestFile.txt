@@ -42,7 +42,21 @@ If you want to unstage your file from stage, that time you have to use below com
  git reset HEAD <file name>
  e.g. git reset HEAD env.test
 
-Added by Mahesh PAtel
-
 Note: This command will help after git add command. (File content will remain as it is)
+
+When to use git reset --soft HEAD command?
+
+Suppose you commit your changes and if you want to roll back your changes.
+Remove your latest commit, that time you have to use below command.
+
+First check git log
+
+ git log
+
+Suppose above command display 05 commits and you want to roll back last 02 commits that time you have to enter below command.
+
+ git reset --soft HEAD~2
+ git log
+
+Last 02 commit will remove automatically.
 
