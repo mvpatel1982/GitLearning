@@ -23,3 +23,24 @@ Commit flies locally
 Check git Log command
 
  git log
+
+When to use git checkout file name command?
+
+Suppose you have one file called env.test and that file has commited over on remote branch and that file contains 10 lines code.
+Now if you by mistakenly update this file and you want back the remote changes again, that time you have to use below command.
+
+ git checkout <file name> 
+ e.g. git checkout env.test 
+
+Note: This command will help before git add command. (File content will change)
+
+When to use git reset HEAD file name command?
+
+Suppose you have one file called env.test and you have added file, but not push to the remote branch.
+If you want to unstage your file from stage, that time you have to use below command.
+
+ git reset HEAD <file name>
+ e.g. git reset HEAD env.test
+
+Note: This command will help after git add command. (File content will remain as it is)
+
