@@ -1,1 +1,25 @@
-New File added.
+Git commands:
+
+ git init (Intialize .git folder)
+
+Adding files to git
+
+ git add <file name> OR
+ git add . (It will add all files) OR
+ git add * (It will add all files)
+
+Check the status of your files
+
+git status 
+
+Note: If you hit this command after git add command, all updated files will show in green color) 
+
+Note: If you hit this command before git add command, all updated files will show in red color)
+
+Commit flies locally
+
+ git commit -m "Commit Message"
+
+Check git Log command
+
+ git log
