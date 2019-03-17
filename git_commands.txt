@@ -92,10 +92,6 @@ Suppose you are in master branch and as soon as you hit the below command it mov
  git checkout -b <branch name>
  git checkout -b local
 
-Delete new local branch
-
- git branch -d <branch name>
-
 Push local branch to git server
 
  git push -u origin <branch name>
@@ -130,3 +126,12 @@ Now we need to apply the stash command.
  git stash apply
 
 Modified the file and add/remove changes and commit the the master local branch.
+ 
+Delete the remote branch in git
+
+ git branch -a
+ git push origin --delete <remote branch name>
+ git push origin --delete <next>
+ git branch -a
+
+
