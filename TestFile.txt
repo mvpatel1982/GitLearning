@@ -10,6 +10,12 @@ Adding files to git
  git add . (It will add all files) OR
  git add * (It will add all files)
 
+Remove files to git
+
+ git rm <file name> OR
+ git rm . (It will remove all files) OR
+ git rm * (It will remove all files)
+
 Check the status of your files
 
 git status 
@@ -62,3 +68,30 @@ Suppose above command display 05 commits and you want to roll back last 02 commi
 
 Last 02 commit will remove automatically.
 
+Create new local branch
+
+ git branch <branch name>
+ git branch local
+
+ Show list the local branches in git
+
+  git branch
+
+ Show list the remote and local branches in git
+
+  git branch -a
+
+ Delete local branch in git
+
+  git branch -d <branch name>
+  git branch -d local
+
+Create new local branch and checkin/Move to that branch
+Suppose you are in master branch and as soon as you hit the below command it moves to the newly created branch with having the code base from master.
+
+ git checkout -b <branch name>
+ git checkout -b local
+
+Delete new local branch
+
+ git branch -d <branch name>
