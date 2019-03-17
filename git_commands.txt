@@ -95,3 +95,38 @@ Suppose you are in master branch and as soon as you hit the below command it mov
 Delete new local branch
 
  git branch -d <branch name>
+
+Push local branch to git server
+
+ git push -u origin <branch name>
+ git push -u origin local
+ git branch -a
+
+Use of git stash command
+Suppose you have modified the file and you don't want to add/remove the changes in git log. and same time you want to move to another branch. That time we should use git stash command.
+
+You are in local branch and you modified file abc.java and now you want to move to master branch.
+
+ git stash
+ git checkout <existing branch name> (Hit this command if you want to move to existing local branch)
+ git checkout -b <new branch name>  (Hit this command if you want to move to new local branch)
+
+Suppose you successfully move to the existing local master branch.
+Note: We have applied git stash command, we can take our changes to this branch.
+Local branch is having one commit ahead and master is one commit back.
+
+So, first we need to take the latest changes from the local branch and then we applied git stash command. So master branch and local branch both are on equivilent.
+
+ git rebase <local branch> (We take the latest code from local branch and right now we are in master branch)
+ git rebase local
+ git log
+
+Note: After checking git log you see the latest changes has been applied to the local branch but not to the remote branch. If we applied the same to the remote branch we have to hit below command.
+
+ git push origin master
+
+Now we need to apply the stash command.
+
+ git stash apply
+
+Modified the file and add/remove changes and commit the the master local branch.
